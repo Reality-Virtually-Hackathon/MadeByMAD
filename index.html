@@ -11,25 +11,37 @@
 
 <body>  
 
-    <a-scene class="fullscreen" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">
+    <a-scene class="fullscreen" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" onclick="choose()">
 
       <a-assets>
-        <audio id="bkground-sound" src="sound/bkground.mp3" crossorigin autoplay ></audio>
+<!--         <audio id="bkground-sound" src="sound/bkground.mp3" crossorigin autoplay ></audio>
         <audio id="wonder-0" src="sound/voice-0.mp3" preload="auto" crossorigin ></audio>
         <audio id="wonder-1" src="sound/voice-1.mp3" preload="auto" crossorigin ></audio>
         <audio id="wonder-2" src="sound/voice-2.mp3" preload="auto" crossorigin ></audio>
-      </a-assets>
+ -->      </a-assets>
 
 
-      <a-entity class="sky" position="5 1 0" rotation="0 -90 15" scale="1 1 1" sound="src: #bkground-sound">
+      <a-entity class="sky" position="5 1 0" rotation="0 -90 15" scale="1 1 1" onclick="choose()">
         <a-sky src="https://farm6.static.flickr.com/5082/5209434257_19baa41784_b.jpg" material="" geometry=""></a-sky>
       </a-entity>
 
-      <a-entity position="-25 -40 -100" rotation="0 0 0" scale="30 30 30">
-        <a-text font="kelsonsans" value="Petra, Jordan" width="6"></a-text>
+      <a-entity  position="-25 -40 -100" rotation="0 0 0" scale="30 30 30">
+        <a-text id="wonder-title" font="kelsonsans" width="6"></a-text>
       </a-entity>
 
-    </a-scene>
+      <a-entity  position="-95 -39 -100" rotation="0 0 0" scale="17 17 17">
+        <a-text id="built-by" font="kelsonsans" width="6"></a-text>
+      </a-entity>
+
+      <a-entity  position="60 -39 -100" rotation="0 0 0" scale="17 17 17">
+        <a-text id="built-when" font="kelsonsans" width="6"></a-text>
+      </a-entity>
+
+      <a-entity  position="-10 -60 -100" rotation="0 0 0" scale="10 10 10">
+        <a-text id="teleport" value="Click anywhere to Teleport" font="kelsonsans" width="6"></a-text>
+      </a-entity>
+
+     </a-scene>
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
@@ -41,5 +53,18 @@
 
 
 
+<!-- sound="src: #bkground-sound" -->
 
+      
 
+<!--       <a-entity >
+        <a-cursor id="cursor"
+          animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
+          animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
+          event-set__1="_event: mouseenter; color: springgreen"
+          event-set__2="_event: mouseleave;"
+          fuse="true"
+          raycaster="objects: .link"></a-cursor>
+      </a-entity>
+
+ -->
