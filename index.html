@@ -14,12 +14,12 @@
     <a-scene class="fullscreen" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" onclick="choose()">
 
       <a-assets>
-<!--         <audio id="bkground-sound" src="sound/bkground.mp3" crossorigin autoplay ></audio>
-        <audio id="wonder-0" src="sound/voice-0.mp3" preload="auto" crossorigin ></audio>
-        <audio id="wonder-1" src="sound/voice-1.mp3" preload="auto" crossorigin ></audio>
-        <audio id="wonder-2" src="sound/voice-2.mp3" preload="auto" crossorigin ></audio>
- -->      </a-assets>
-
+        <!-- <audio id="bkground-sound" src="sound/bkground.mp3" crossorigin autoplay ></audio> -->
+        <audio id="narration-sound" src="sound/voice-0.mp3" crossorigin autoplay ></audio>
+        <!-- <audio id="wonder-" src="sound/voice-0.mp3" preload="auto" crossorigin ></audio> -->
+        <!-- <audio id="wonder-1" src="sound/voice-1.mp3" preload="auto" crossorigin ></audio> -->
+        <!-- <audio id="wonder-2" src="sound/voice-2.mp3" preload="auto" crossorigin ></audio> -->
+      </a-assets>
 
       <a-entity class="sky" position="5 1 0" rotation="0 -90 15" scale="1 1 1" onclick="choose()">
         <a-sky src="https://farm6.static.flickr.com/5082/5209434257_19baa41784_b.jpg" material="" geometry=""></a-sky>
@@ -52,19 +52,3 @@
 
 
 
-
-<!-- sound="src: #bkground-sound" -->
-
-      
-
-<!--       <a-entity >
-        <a-cursor id="cursor"
-          animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
-          animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
-          event-set__1="_event: mouseenter; color: springgreen"
-          event-set__2="_event: mouseleave;"
-          fuse="true"
-          raycaster="objects: .link"></a-cursor>
-      </a-entity>
-
- -->
